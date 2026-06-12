@@ -6,17 +6,315 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Landing Page</title>
+    <title>Bose</title>
     <link
       rel="stylesheet"
-      href="src/styles/main.scss"
+      href="./src/styles/style.css"
     />
-    <script
-      src="src/scripts/main.js"
-      defer
-    ></script>
   </head>
+
   <body>
-    <h1>Landing Page</h1>
+    <header class="header">
+      <a
+        href="#home"
+        class="header__logo"
+      >
+        <img
+          src="./src/pmg/Logo.png"
+          alt="BOSE logo"
+        />
+      </a>
+
+      <div class="header__actions">
+        <div class="header__phone-wrapper">
+          <span class="header__phone-number">+1 234 555-55-55</span>
+          <a
+            href="tel:+12345555555"
+            class="header__phone"
+          >
+            <img
+              src="./src/svg/Phone.svg"
+              alt="phone"
+            />
+          </a>
+        </div>
+
+        <button
+          class="header__menu"
+          id="menuOpen"
+          type="button"
+        >
+          <img
+            src="./src/svg/menu.svg"
+            alt="menu"
+          />
+        </button>
+      </div>
+    </header>
+
+    <aside
+      class="menu"
+      id="menu"
+    >
+      <div class="menu__header">
+        <a
+          href="#home"
+          class="menu__logo"
+        >
+          <img
+            src="./src/pmg/Logo.png"
+            alt="BOSE logo"
+          />
+        </a>
+
+        <button
+          class="menu__close"
+          id="menuClose"
+          type="button"
+        >
+          ×
+        </button>
+      </div>
+
+      <nav class="menu__nav">
+        <a href="#home">HOME</a>
+        <a href="#recommended">RECOMMENDED</a>
+        <a href="#categories">CATEGORIES</a>
+        <a href="#how-to-buy">HOW TO BUY</a>
+        <a href="#contacts">CONTACTS</a>
+      </nav>
+
+      <div class="menu__contacts">
+        <a
+          href="tel:+12345555555"
+          class="menu__phone"
+        >
+          +1 234 5555-55-55
+        </a>
+        <a
+          href="tel:+12345555555"
+          class="menu__call"
+        >
+          CALL TO ORDER
+        </a>
+      </div>
+    </aside>
+
+    <main>
+      <section
+        class="hero"
+        id="home"
+      >
+        <div class="container">
+          <h1 class="hero__title">
+            The world shades.
+            <br />
+            Your music shines.
+          </h1>
+        </div>
+      </section>
+
+      <section
+        class="recommended"
+        id="recommended"
+      >
+        <div class="container">
+          <h2 class="section-title">Recommended</h2>
+
+          <div class="cards">
+            <article class="card">
+              <img
+                src="./src/pmg/jbl1.png"
+                alt=""
+                class="card__img"
+              />
+              <h3 class="card__title">Bose portable Smart speaker</h3>
+              <p class="card__text">Smart home</p>
+              <p class="card__price">$ 399.00</p>
+            </article>
+
+            <article class="card">
+              <img
+                src="./src/pmg/jbl2.png"
+                alt=""
+                class="card__img"
+              />
+              <h3 class="card__title">SoundLink Flex Bluetooth speaker</h3>
+              <p class="card__text">Portable bluetooth</p>
+              <p class="card__price">$ 149.00</p>
+            </article>
+
+            <article class="card">
+              <img
+                src="./src/pmg/jbl3.png"
+                alt=""
+                class="card__img"
+              />
+              <h3 class="card__title">SoundLink Color Bluetooth speaker II</h3>
+              <p class="card__text">Portable bluetooth</p>
+              <p class="card__price">$ 129.00</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="categories"
+        id="categories"
+      >
+        <div class="container">
+          <h2 class="section-title">
+            Browse Bose
+            <br />
+            products by category
+          </h2>
+
+          <div class="category-row">
+            <img
+              src="./src/pmg/panivan.png"
+              alt=""
+              class="category-row__img category-row__img--big"
+            />
+            <img
+              src="./src/pmg/panitu.png"
+              alt=""
+              class="category-row__img category-row__img--small"
+            />
+          </div>
+          <h3 class="category-row__title">Headphones & earbuds</h3>
+
+          <div class="category-row">
+            <img
+              src="./src/pmg/fri.png"
+              alt=""
+              class="category-row__img category-row__img--big"
+            />
+            <img
+              src="./src/pmg/panifo.png"
+              alt=""
+              class="category-row__img category-row__img--small"
+            />
+          </div>
+          <h3 class="category-row__title">Speakers</h3>
+
+          <div class="category-row">
+            <img
+              src="./src/pmg/Imagefaif.png"
+              alt=""
+              class="category-row__img category-row__img--small"
+            />
+            <img
+              src="./src/pmg/six.png"
+              alt=""
+              class="category-row__img category-row__img--big"
+            />
+          </div>
+          <h3 class="category-row__title">Audio sunglasses</h3>
+
+          <button
+            class="view-button"
+            type="button"
+          >
+            View all
+          </button>
+        </div>
+      </section>
+
+      <section
+        class="benefits"
+        id="how-to-buy"
+      >
+        <div class="container benefits__container">
+          <h2 class="benefits__title">
+            Why buy direct
+            <br />
+            from Bose
+          </h2>
+
+          <div class="benefits__content">
+            <ul class="benefits__list">
+              <li>Free 2-day shipping and returns</li>
+              <li>90-day risk-free trial</li>
+              <li>World class customer service</li>
+              <li>My Bose account management</li>
+            </ul>
+
+            <p class="benefits__text">
+              A great product is more than what’s in the box. It’s a promise of
+              premium performance, world-class support, and everything you
+              expect from a trusted brand. It’s just one of many reasons why
+              you’ll shop with confidence on Bose.com.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="contact"
+        id="contacts"
+      >
+        <div class="container">
+          <h2 class="section-title">Contact us</h2>
+
+          <div class="contact__content">
+            <form class="contact__form">
+              <input
+                class="contact__input"
+                type="text"
+                placeholder="Name"
+              />
+              <input
+                class="contact__input"
+                type="email"
+                placeholder="Email"
+              />
+              <textarea
+                class="contact__textarea"
+                placeholder="Message"
+              ></textarea>
+              <button
+                class="contact__button"
+                type="submit"
+              >
+                Send
+              </button>
+            </form>
+
+            <div class="contact__info">
+              <div class="contact__item">
+                <p class="contact__label">Phone</p>
+                <a href="tel:+12345555555">+1 234 5555-55-55</a>
+              </div>
+
+              <div class="contact__item">
+                <p class="contact__label">Email</p>
+                <a href="mailto:hello@miami.com">hello@miami.com</a>
+              </div>
+
+              <div class="contact__item">
+                <p class="contact__label">Address</p>
+                <a href="#">
+                  400 first ave.
+                  <br />
+                  suite 700
+                  <br />
+                  Minneapolis, MN 55401
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img
+        src="./src/pmg/futer.png"
+        alt="Bose headphones"
+        class="footer__img"
+      />
+    </footer>
+
+    <script src="./src/main.js"></script>
   </body>
 </html>
