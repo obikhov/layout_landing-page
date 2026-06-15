@@ -239,7 +239,11 @@ body {
 }
 
 .view-button:hover {
-  background: #d97718;
+  background: #1b2129;
+}
+
+.view-button:active {
+  background: #010810;
 }
 
 /* ABOUT */
@@ -325,6 +329,13 @@ body {
 
   font-family: inherit;
   font-size: 14px;
+
+  transition: 0.3s;
+}
+
+.contact__input::placeholder,
+.contact__textarea::placeholder {
+  color: #7e7e83;
 }
 
 .contact__input {
@@ -338,12 +349,12 @@ body {
 
 .contact__input:hover,
 .contact__textarea:hover {
-  border-color: #d5d7de;
+  border-color: #dbdbdb;
 }
 
 .contact__input:focus,
 .contact__textarea:focus {
-  border-color: #1b2129;
+  border-color: #f98921;
 }
 
 .contact__button {
@@ -354,17 +365,22 @@ body {
   border: 0;
   border-radius: 8px;
 
-  background: #1b2129;
+  background: #f98921;
   color: #fff;
 
   font-size: 16px;
   font-weight: 700;
 
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .contact__button:hover {
-  background: #111820;
+  background: #1b2129;
+}
+
+.contact__button:active {
+  background: #010810;
 }
 
 .contact__info {
