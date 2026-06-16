@@ -449,9 +449,9 @@ body {
 
 .menu__nav,
 .menu__contacts {
-  width: 1020px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 324px;
+  margin-left: 120px;
+  margin-right: 0;
 }
 
 .menu__nav {
@@ -720,9 +720,9 @@ body {
 
   .menu__nav,
   .menu__contacts {
-    width: 324px;
-    margin-left: 120px;
-    margin-right: 0;
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .menu__nav {
