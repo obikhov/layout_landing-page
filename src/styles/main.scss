@@ -775,13 +775,12 @@ body {
     line-height: 24px;
   }
 
-  .menu__nav,
-  .menu__contacts {
-    width: auto;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
+            .menu__nav,
+            .menu__contacts {
+              width: 324px;
+              margin-left: 120px;
+              margin-right: 0;
+            }
   .menu__nav {
     margin-top: 56px;
   }
