@@ -57,6 +57,8 @@ body {
 
   width: 32px;
   height: 32px;
+
+  cursor: pointer;
 }
 
 .header__phone img,
@@ -163,6 +165,8 @@ body {
 
   object-fit: contain;
   background: #f9f9f9;
+
+  cursor: pointer;
 }
 
 .card__title {
@@ -209,6 +213,8 @@ body {
 
   object-fit: cover;
   background: #f9f9f9;
+
+  cursor: pointer;
 }
 
 .category-row__title {
@@ -449,9 +455,9 @@ body {
 
 .menu__nav,
 .menu__contacts {
-  width: 1020px;
-  margin-left: auto;
-  margin-right: auto;
+  width: auto;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 .menu__nav {
@@ -469,10 +475,6 @@ body {
   font-size: 22px;
   line-height: 22px;
   font-weight: 700;
-}
-
-.menu__nav a:hover {
-  border-bottom: 1px solid #1b2129;
 }
 
 .menu__contacts {
@@ -501,6 +503,61 @@ body {
   letter-spacing: 2px;
 
   border-bottom: 1px solid #1b2129;
+}
+
+/* HOVERS */
+
+.logo,
+.header__phone,
+.header__menu,
+.menu__close,
+.menu__nav a,
+.menu__phone,
+.menu__call,
+.contact__item a,
+.view-button,
+.contact__button,
+.card__img,
+.category-row__img {
+  transition:
+    transform 0.3s,
+    opacity 0.3s,
+    color 0.3s,
+    background-color 0.3s,
+    border-color 0.3s;
+}
+
+.logo:hover,
+.header__phone:hover,
+.header__menu:hover,
+.menu__close:hover,
+.menu__phone:hover,
+.menu__call:hover,
+.contact__item a:hover {
+  opacity: 0.7;
+}
+
+.menu__nav a:hover {
+  border-bottom: 1px solid #1b2129;
+}
+
+.card__img:hover,
+.category-row__img:hover {
+  transform: scale(1.03);
+}
+
+/* AUTOFILL */
+
+.contact__input:-webkit-autofill,
+.contact__textarea:-webkit-autofill,
+.contact__input:-webkit-autofill:hover,
+.contact__textarea:-webkit-autofill:hover,
+.contact__input:-webkit-autofill:focus,
+.contact__textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #f9f9f9 inset;
+  -webkit-text-fill-color: #1b2129;
+  caret-color: #1b2129;
+  transition: background-color 9999s ease-in-out 0s;
 }
 
 /* TABLET */

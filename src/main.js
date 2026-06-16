@@ -2,8 +2,7 @@ const phoneButton = document.querySelector('.header__phone');
 const phoneNumber = document.querySelector('.header__phone-number');
 
 if (phoneButton && phoneNumber) {
-  phoneButton.addEventListener('click', (event) => {
-    event.preventDefault();
+  phoneButton.addEventListener('click', () => {
     phoneNumber.classList.toggle('active');
   });
 }
@@ -28,6 +27,21 @@ if (menuOpen && menuClose && menu) {
     link.addEventListener('click', () => {
       menu.classList.remove('active');
       document.body.style.overflow = '';
+    });
+  });
+}
+
+const contactForm = document.querySelector('.contact__form');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    contactForm.reset();
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
     });
   });
 }
