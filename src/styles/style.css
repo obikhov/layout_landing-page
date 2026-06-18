@@ -25,6 +25,8 @@ body {
   line-height: 18px;
   font-weight: 700;
   letter-spacing: 2px;
+
+  transition: opacity 0.3s;
 }
 
 /* HEADER */
@@ -63,6 +65,8 @@ body {
 .header__menu img {
   width: 24px;
   height: 24px;
+
+  transition: transform 0.3s;
 }
 
 .header__menu {
@@ -70,6 +74,11 @@ body {
   border: 0;
   background: transparent;
   cursor: pointer;
+}
+
+.header__phone:hover img,
+.header__menu:hover img {
+  transform: scale(1.2);
 }
 
 .header__phone-wrapper {
@@ -233,6 +242,9 @@ body {
 
   font-size: 16px;
   font-weight: 700;
+  line-height: 56px;
+  text-align: center;
+  text-decoration: none;
 
   cursor: pointer;
   transition: 0.3s;
@@ -401,11 +413,6 @@ body {
   font-size: 14px;
 }
 
-.contact__item a {
-  color: #1b2129;
-  text-decoration: none;
-}
-
 /* MENU */
 
 .menu {
@@ -469,6 +476,10 @@ body {
   font-size: 22px;
   line-height: 22px;
   font-weight: 700;
+
+  transition:
+    border-color 0.3s,
+    color 0.3s;
 }
 
 .menu__nav a:hover {
@@ -489,6 +500,8 @@ body {
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
+
+  transition: color 0.3s;
 }
 
 .menu__call {
@@ -501,10 +514,21 @@ body {
   letter-spacing: 2px;
 
   border-bottom: 1px solid #1b2129;
+
+  transition:
+    color 0.3s,
+    border-color 0.3s;
+}
+
+.menu__phone:hover,
+.menu__call:hover {
+  color: #f98921;
+  border-color: #f98921;
 }
 
 .card__img,
 .category-row__img {
+  cursor: pointer;
   transition: transform 0.3s;
 }
 
