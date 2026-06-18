@@ -36,12 +36,6 @@ const contactForm = document.querySelector('.contact__form');
 if (contactForm) {
   contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
-
     contactForm.reset();
-
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
   });
 }
