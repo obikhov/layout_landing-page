@@ -413,6 +413,19 @@ body {
   font-size: 14px;
 }
 
+.contact__item a,
+.contact__item a:visited {
+  color: #1b2129;
+  text-decoration: none;
+  line-height: 140%;
+
+  transition: color 0.3s;
+}
+
+.contact__item a:hover {
+  color: #f98921;
+}
+
 /* MENU */
 
 .menu {
@@ -465,6 +478,7 @@ body {
   margin-top: 56px;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .menu__nav a {
   display: block;
   width: max-content;
@@ -483,7 +497,8 @@ body {
 }
 
 .menu__nav a:hover {
-  border-bottom: 1px solid #1b2129;
+  color: #f98921;
+  border-bottom: 1px solid #f98921;
 }
 
 .menu__contacts {
